@@ -2,3 +2,49 @@
 .mySlides {
     display: none;
 }
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap');
+
+/*html*/
+html,body {
+    font-family: 'Indie Flower';
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: "border-box";
+}
+hr{
+    border: .5px;
+    border-top:1px solid black!important;
+    margin:20px 0;
+}
+ul {
+    list-style-type: none;
+}
+.news-container {
+    display: flex;
+    background-color: rgb(15, 14, 14);
+    border-bottom-left-radius: 2.5%;
+    border-top-left-radius: 2.5%;
+    border-top-right-radius: 2.5%;
+    border-bottom-right-radius: 2.5%;
+}
+.container {
+    background-color: rgb(32, 28, 28);
+    color: whitesmoke;
+    font-family: 'Indie Flower', cursive;
+}
+.news-container div {
+    border: none;
+    padding: 10px;
+}
+.container-1 {
+    flex: 1;
+}
+.container-2 {
+    flex: 1;
+}
+.container-3 {
+    flex: 1;
+}

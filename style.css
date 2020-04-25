@@ -8,6 +8,7 @@
 /*html*/
 html,body {
     font-family: 'Indie Flower';
+    background-color: whitesmoke;
 }
 *{
     padding: 0;
@@ -16,24 +17,30 @@ html,body {
 }
 hr{
     border: .5px;
-    border-top:1px solid black!important;
+    border-top:1px solid whitesmoke!important;
     margin:20px 0;
 }
 ul {
     list-style-type: none;
 }
+.w3-content {
+    background-color: whitesmoke;
+}
+
+/*containers*/
 .news-container {
     display: flex;
-    background-color: rgb(15, 14, 14);
+    background-color: whitesmoke;
     border-bottom-left-radius: 2.5%;
     border-top-left-radius: 2.5%;
     border-top-right-radius: 2.5%;
     border-bottom-right-radius: 2.5%;
 }
-.container {
+.mcontainer {
     background-color: rgb(32, 28, 28);
     color: whitesmoke;
     font-family: 'Indie Flower', cursive;
+    padding: .5em 1em .8em 1em;
 }
 .news-container div {
     border: none;
@@ -47,4 +54,87 @@ ul {
 }
 .container-3 {
     flex: 1;
+}
+.footer-container {
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+.footer {
+    padding-top: 1.5em;
+    padding-bottom: .8em;
+}
+.footer-links {
+    padding-top: .8em;
+    padding-bottom: .8em;
+}
+
+/*img*/
+
+.simg {
+    border-bottom-left-radius: 2.5%;
+    border-top-left-radius: 2.5%;
+    border-top-right-radius: 2.5%;
+    border-bottom-right-radius: 2.5%;
+}
+
+.img-container {
+    margin: 0 auto;
+    height: 300px;
+    width: 202.6px;
+    position: relative;
+}
+.img-container img {
+    border-bottom-left-radius: 2.5%;
+    border-top-left-radius: 2.5%;
+    border-top-right-radius: 2.5%;
+    border-bottom-right-radius: 2.5%;
+    height: 75%;
+    width: 75%;
+    margin-left: 2em;
+}
+.top {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: 0.5 ease;
+}
+.top:hover {
+    opacity: 1;
+}
+  
+
+/* text */
+.center {
+    text-align: center;
+    padding-left: 5em;
+}
+.title-text {
+    font-size: 1rem;
+    font-weight: 700;
+    font-style: italic;
+    font-family: 'Exo 2', sans-serif;
+    color: black;
+}
+.list-text {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    padding-top: .5em;
+    padding-bottom: .1em;
+}
+.link-text {
+    font-size: .6rem;
+    font-weight: 700;
+    font-style: italic;
+    font-family: 'Exo 2', sans-serif;
+}
+.text-black {
+    color: black;
+}
+
+/*margin and padding*/
+.margin-top {
+    margin-top: 1.2em!important;
 }

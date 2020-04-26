@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Damil The Great</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://res.cloudinary.com/start-ng/image/upload/c_scale,h_224/v1587905300/milly3_mchyti.jpg" type="image/jpg" sizes="16x16">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -84,62 +85,94 @@
             <div class="mcontainer" style="width: 100%;">
                 <h2 class="list-text">ALBUMS AND EPS</h2>
                 <div class="news-container w3-row">
-                    <div class="container-1">
-                        <img src="https://res.cloudinary.com/start-ng/image/upload/v1587905301/milly9_hn0gvb.jpg" class="simg" style="height: 150px; width: 150px;">
+                    <div class="container-1" >
+                        <img src="https://res.cloudinary.com/start-ng/image/upload/v1587905301/milly9_hn0gvb.jpg" class="simg" style="width: 80%; ">
                         <p class="text-black">To the Candy Shop</p>
                     </div>
         
                     <div class="container-2">
-                        <img src="https://res.cloudinary.com/start-ng/image/upload/v1587905300/milly7_cp3j4s.jpg" class="simg" style="height: 150px; width: 150px;">
+                        <img src="https://res.cloudinary.com/start-ng/image/upload/v1587905300/milly7_cp3j4s.jpg" class="simg" style=" width:80%; ">
                         <p class="text-black">I - EP</p></a>
                     </div>
-                    
                 </div>
                 <hr>
         
                 <h2 class="list-text">SINGLES</h2>
                 <div class="news-container w3-row">
-                    <div class="container-1 w3-container">
-                        <img src="" class="simg" style="height: 90px; width: 90px;">
+                    <div class="container-1">
+                        <img src="https://res.cloudinary.com/start-ng/image/upload/v1587931944/milly10_ahnybr.jpg" class="simg" style="width: 80%; " >
                         <p class="text-black">Lunar Cruise</p>
                     </div>
         
                     <div class="container-2">
-                        <img src="https://res.cloudinary.com/start-ng/image/upload/v1587905300/milly6_oayqw2.jpg" class="simg" style="height: 90px; width: 90px;">
+                        <img src="https://res.cloudinary.com/start-ng/image/upload/v1587905300/milly6_oayqw2.jpg" class="simg" style="width: 80%; ">
                         <p class="text-black">Wavy</p>
                     </div>
         
                     <div class="container-3">
-                        <img src="https://res.cloudinary.com/start-ng/image/upload/v1587905300/milly4_wvaqv4.jpg" class="simg" style="height: 90px; width: 90px;">
+                        <img src="https://res.cloudinary.com/start-ng/image/upload/v1587905300/milly4_wvaqv4.jpg" class="simg" style="width: 80%; ">
                         <p class="text-black">Rick and Monty</p>
                     </div>
                 </div>
             </div>
             
             <!-- The Contact Section -->
-            <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-                <h2 class="w3-wide w3-center">CONTACT THE KING</h2>
-                <p class="w3-opacity w3-center"><i>You're a Fan? Drop a note!</i></p>
-                <div class="w3-row w3-padding-32">
-                <div class="w3-col m6 w3-large w3-margin-bottom">
-                    <i class="fa fa-map-marker" style="width:30px"></i>LAGOS<br>
-                    <i class="fa fa-phone" style="width:30px"></i> Phone: <br>
-                    <i class="fa fa-envelope" style="width:30px"> </i> Email: <br>
+            
+            <div class="row contact-container">
+                <div class="col-12">
+                    <h2 class="contact-title">Get in Touch with the KING</h2>
                 </div>
-                <div class="w3-col m6">
-                    <form action="/action_page.php" target="_blank">
-                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-                        <div class="w3-half">
-                        <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                <div class="col-lg-8">
+                    <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder=" Enter Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder="Enter Subject">
+                                </div>
+                            </div>
                         </div>
-                        <div class="w3-half">
-                        <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                        <div class="form-group mt-3">
+                            <button type="submit" class="btn btn-dark">Send</button>
                         </div>
-                    </div>
-                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-                    <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
                     </form>
                 </div>
+                <div class="col-lg-3 offset-lg-1">
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><i class="ti-home"></i></span>
+                        <div class="media-body">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+                        <div class="media-body">
+                            <h3></h3>
+                            <p>Mon to Fri 9am to 6pm</p>
+                        </div>
+                    </div>
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><i class="ti-email"></i></span>
+                        <div class="media-body">
+                            <h3></h3>
+                            <p>Send us your query anytime!</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             

@@ -18,27 +18,17 @@
             <div class="w3-bar w3-black w3-card">
                 <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
                 <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-                <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">THE TRAP KINK</a>
-                <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT THE KING</a>
+                <a href="#the-artist" class="w3-bar-item w3-button w3-padding-large w3-hide-small">THE TRAP KINK</a>
+                <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT THE KING</a>
                 <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">THE KING'S BARS</a>
-                <div class="w3-dropdown-hover w3-hide-small">
-                <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
-                <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                    <a href="#" class="w3-bar-item w3-button">BOOKING</a>
-                    <a href="#" class="w3-bar-item w3-button">CONTACT</a>
-                    <a href="#" class="w3-bar-item w3-button">Media</a>
-                </div>
-                </div>
-                <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
             </div>
         </div>
             
             <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
         <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-            <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">THE TRAP KING</a>
-            <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT THE KING</a>
+            <a href="#the-artist" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">THE TRAP KING</a>
+            <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT THE KING</a>
             <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">THE KING'S BARS</a>
-            <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MORE</a>
         </div>
             
         
@@ -47,15 +37,15 @@
         <div class="w3-content" style="max-width:2000px;margin-top:46px">
             <hr>
             <!--his picture-->
-            <div class="margin-top">
+            <div class="margin-top" id="the-artist">
                 <div class="img-container">
                     <img class="bottom" src="https://res.cloudinary.com/start-ng/image/upload/v1587905769/milly2_ntnkzj.jpg">
                     <img class="top" src="https://res.cloudinary.com/start-ng/image/upload/v1587905769/milly1_fmxgco.jpg">
                 </div>
             </div>
             <!-- The Artist Section -->
-            <div class="w3-container w3-content w3-center " style="max-width:800px" id="band">
-                <h2 class="w3-wide">DAMIL THE GREAT</h2>
+            <div class="w3-container w3-center " style="max-width:800px" >
+                <h2 class="name-text">DAMIL <br style="font-weight: 200;">THE GREAT</br></h2>
                 <p class="w3-opacity"><i>The trap KING</i></p>
                 <p class="w3-justify"></p>
             </div>
@@ -82,7 +72,7 @@
             </div>-->
             
             <!-- HIS bars-->
-            <div class="mcontainer" style="width: 100%;">
+            <div class="mcontainer" style="width: 100%;" id="bars">
                 <h2 class="list-text">ALBUMS AND EPS</h2>
                 <div class="news-container w3-row">
                     <div class="container-1" >
@@ -118,9 +108,9 @@
             
             <!-- The Contact Section -->
             
-            <div class="row contact-container">
+            <div class="row contact-container" id="contact">
                 <div class="col-12">
-                    <h2 class="contact-title">Get in Touch with the KING</h2>
+                    <h2 class="contact-text">Get in Touch with the KING</h2>
                 </div>
                 <div class="col-lg-8">
                     <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
@@ -183,9 +173,7 @@
             <!-- Footer -->
         <footer class="w3-container footer-container footer w3-xlarge">
             <div class="footer-links">
-                <a href=""><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
                 <a href=""><i class="fa fa-instagram w3-hover-opacity"></i></a>
-                <a href=""><i class="fa fa-snapchat w3-hover-opacity"></i></a>
                 <a href=""><i class="fa fa-twitter w3-hover-opacity"></i></a>
                 <a href=""><i class="fa fa-linkedin w3-hover-opacity"></i></a>
             </div>         

@@ -29,7 +29,6 @@ ul {
 /*containers*/
 .news-container {
     display: flex;
-    justify-content: ;
     background-color: whitesmoke;
     border-bottom-left-radius: 5%;
     border-top-left-radius: 5%;
